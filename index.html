@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana sayfa | Ad Soyad</title>
+<meta name="description" content="Animasyon öğrencisi Ad Soyad'ın kodlama ve animasyon çalışmaları portfolyosu.">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header class="site">
+<a class="brand" href="index.html">Ad Soyad</a>
+<button id="menuBtn" aria-expanded="false" aria-controls="nav">Menü</button>
+<nav id="nav" aria-label="Ana menü"><ul><li><a href="index.html" aria-current="page">Ana sayfa</a></li><li><a href="hakkimda.html">Hakkımda</a></li><li><a href="projeler.html">Projeler</a></li><li><a href="iletisim.html">İletişim</a></li></ul></nav>
+<button id="themeBtn" aria-pressed="false">Karanlık mod</button>
+</header>
+<main id="icerik"><div class="wrap">
+<section class="hero" aria-labelledby="baslik">
+<div>
+<h1 id="baslik">Hareketi kare kare kuruyorum.</h1>
+<p class="lead">Ben Ad Soyad, animasyon öğrencisiyim. Çizgi film animasyonu ve mobil oyun alanında çalışmak istiyorum. Bu sitede dönem boyunca yazdığım kodları ve animasyon bakışıma nasıl bağlandıklarını bulabilirsiniz.</p>
+<p><a class="btn primary" href="projeler.html">Projelere bak</a> <a class="btn" href="hakkimda.html">Hakkımda</a></p>
+</div>
+<div class="stage">
+<svg viewBox="0 0 300 180" role="img" aria-label="Kaydırıcıyla kare kare hareket eden, zıplayan bir top"><line x1="10" y1="170" x2="290" y2="170" stroke="currentColor" stroke-width="2"/><ellipse id="ball" cx="30" cy="150" rx="18" ry="18" fill="var(--key)"/></svg>
+<label for="frame"><span>Kareyi seç</span><span id="frameOut" aria-live="polite">1 / 24</span></label>
+<input type="range" id="frame" min="1" max="24" value="1">
+<div class="strip" id="strip" aria-hidden="true"></div>
+<small>Kaydırıcıyı sürükleyin: top yere değerken basıklaşır.</small>
+</div>
+</section>
+</div></main>
+<footer><div class="wrap">© 2026 Ad Soyad. Bu sitede izleyici, çerez veya üçüncü taraf betik yoktur; yalnızca karanlık mod tercihiniz tarayıcınızda saklanır.</div></footer>
+</body>
+</html>

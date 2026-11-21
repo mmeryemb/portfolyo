@@ -1,0 +1,62 @@
+:root{--bg:#f4f6fb;--surface:#fff;--ink:#121826;--muted:#4a5468;--line:#d5dbe8;--accent:#2338d6;--on-accent:#fff;--key:#c2410c;--r:10px}
+[data-theme=dark]{--bg:#0e1320;--surface:#171e30;--ink:#eef1f8;--muted:#a9b3c9;--line:#2b3550;--accent:#9db0ff;--on-accent:#0e1320;--key:#ff9a6b}
+*{box-sizing:border-box}
+html{scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.65 "Segoe UI",system-ui,-apple-system,sans-serif}
+h1,h2,h3{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;line-height:1.15;margin:0 0 .6em}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.6rem}h3{font-size:1.15rem}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--key);outline-offset:2px}
+.skip{position:absolute;left:-999px;background:var(--accent);color:var(--on-accent);padding:.5rem 1rem}
+.skip:focus{left:1rem;top:1rem;z-index:10}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.site{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;max-width:68rem;margin:0 auto;padding:1rem 1.25rem}
+.brand{font:800 1.2rem "Trebuchet MS",sans-serif;color:var(--ink);text-decoration:none;margin-right:auto}
+nav ul{display:flex;gap:.25rem;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:.45rem .8rem;border-radius:var(--r);color:var(--ink);text-decoration:none}
+nav a:hover{background:var(--line)}
+nav a[aria-current=page]{background:var(--accent);color:var(--on-accent)}
+button,.btn{font:inherit;cursor:pointer;border:2px solid var(--accent);background:transparent;color:var(--accent);padding:.45rem .9rem;border-radius:var(--r);text-decoration:none;display:inline-block}
+button:hover,.btn:hover{background:var(--accent);color:var(--on-accent)}
+.btn.primary,button.primary{background:var(--accent);color:var(--on-accent)}
+#menuBtn{display:none}
+main{padding:2rem 0 4rem}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:center}
+.lead{color:var(--muted);max-width:34rem}
+.stage{background:var(--surface);border:2px solid var(--ink);border-radius:var(--r);padding:1rem}
+.stage svg{width:100%;height:auto;display:block}
+.stage label{display:flex;justify-content:space-between;font-weight:600;margin-top:.5rem}
+.stage input[type=range]{width:100%;accent-color:var(--key)}
+.stage small{color:var(--muted)}
+.strip{display:flex;gap:6px;margin-top:.5rem}
+.strip i{flex:1;height:10px;background:var(--line);border-radius:2px}
+.strip i.on{background:var(--key)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1.25rem;padding:0;list-style:none}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1rem;display:flex;flex-direction:column;gap:.5rem}
+.card svg{width:100%;height:auto;border-radius:6px;background:var(--bg)}
+.card p{margin:0;font-size:.97rem}
+.learned{color:var(--muted)}
+.card a{margin-top:auto}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:1.25rem}
+.tools button[aria-pressed=true]{background:var(--accent);color:var(--on-accent)}
+input,textarea{font:inherit;width:100%;padding:.6rem;border:2px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--ink)}
+.tools input{width:14rem;margin-left:auto}
+label{font-weight:600;display:block;margin:1rem 0 .25rem}
+.err{color:var(--key);font-size:.92rem;min-height:1.2em;margin:.2rem 0 0}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--key)}
+.msg{margin-top:1rem;padding:.8rem 1rem;border-left:5px solid var(--accent);background:var(--surface)}
+.note{font-size:.9rem;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.prose{max-width:42rem}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.92rem}
+@media (max-width:760px){
+ .hero,.cols{grid-template-columns:1fr}
+ #menuBtn{display:inline-block}
+ nav{display:none;width:100%;order:5}
+ nav.open{display:block}
+ nav ul{flex-direction:column}
+ .tools input{margin-left:0;width:100%}
+}
+@media (max-width:480px){main{padding-top:1rem}h1{font-size:2rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

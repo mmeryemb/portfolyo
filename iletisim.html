@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İletişim | Ad Soyad</title>
+<meta name="description" content="Animasyon öğrencisi Ad Soyad'ın kodlama ve animasyon çalışmaları portfolyosu.">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header class="site">
+<a class="brand" href="index.html">Ad Soyad</a>
+<button id="menuBtn" aria-expanded="false" aria-controls="nav">Menü</button>
+<nav id="nav" aria-label="Ana menü"><ul><li><a href="index.html">Ana sayfa</a></li><li><a href="hakkimda.html">Hakkımda</a></li><li><a href="projeler.html">Projeler</a></li><li><a href="iletisim.html" aria-current="page">İletişim</a></li></ul></nav>
+<button id="themeBtn" aria-pressed="false">Karanlık mod</button>
+</header>
+<main id="icerik"><div class="wrap">
+<h1>İletişim</h1>
+<div class="cols"><div>
+<form id="contactForm" novalidate>
+<label for="ad">Adınız</label><input id="ad" name="ad" autocomplete="name" required aria-describedby="err-ad"><p class="err" id="err-ad"></p>
+<label for="eposta">E-posta</label><input id="eposta" name="eposta" type="email" autocomplete="email" required aria-describedby="err-eposta"><p class="err" id="err-eposta"></p>
+<label for="mesaj">Mesajınız</label><textarea id="mesaj" name="mesaj" rows="5" required aria-describedby="err-mesaj"></textarea><p class="err" id="err-mesaj"></p>
+<button class="primary" type="submit">Mesajı doğrula</button>
+<p class="note">Aydınlatma: Bu formda yazdıklarınız yalnızca tarayıcınızda doğrulanır; kaydedilmez, bir sunucuya veya üçüncü tarafa gönderilmez.</p>
+<div id="formMsg" class="msg" role="status" aria-live="polite"></div>
+</form></div>
+<div class="prose"><h2>Bağlantılar</h2>
+<ul><li><a href="https://github.com/KULLANICI_ADI">GitHub profilim</a></li><li><a href="https://www.linkedin.com/in/KULLANICI_ADI">LinkedIn profilim</a></li></ul>
+<p class="note">Telefon ve adres bilgisi bilerek paylaşılmamıştır.</p></div></div>
+</div></main>
+<footer><div class="wrap">© 2026 Ad Soyad. Bu sitede izleyici, çerez veya üçüncü taraf betik yoktur; yalnızca karanlık mod tercihiniz tarayıcınızda saklanır.</div></footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeler | Ad Soyad</title>
+<meta name="description" content="Animasyon öğrencisi Ad Soyad'ın kodlama ve animasyon çalışmaları portfolyosu.">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header class="site">
+<a class="brand" href="index.html">Ad Soyad</a>
+<button id="menuBtn" aria-expanded="false" aria-controls="nav">Menü</button>
+<nav id="nav" aria-label="Ana menü"><ul><li><a href="index.html">Ana sayfa</a></li><li><a href="hakkimda.html">Hakkımda</a></li><li><a href="projeler.html" aria-current="page">Projeler</a></li><li><a href="iletisim.html">İletişim</a></li></ul></nav>
+<button id="themeBtn" aria-pressed="false">Karanlık mod</button>
+</header>
+<main id="icerik"><div class="wrap">
+<h1>Projeler</h1>
+<p class="lead">Dönem boyunca yaptığım çalışmalardan seçtiklerim. Karttaki bağlantılar ilgili GitHub deposuna gider.</p>
+<div class="tools" role="group" aria-label="Proje filtreleri">
+<button data-filter="hepsi" aria-pressed="true">Tümü</button><button data-filter="algoritma" aria-pressed="false">Algoritma</button><button data-filter="python" aria-pressed="false">Python</button><button data-filter="web" aria-pressed="false">Web</button><button data-filter="yazi" aria-pressed="false">Yazı</button>
+<label for="search" style="position:absolute;left:-999px">Projelerde ara</label>
+<input type="search" id="search" placeholder="Projelerde ara">
+</div>
+<p id="count" class="note" aria-live="polite"></p>
+<ul class="grid"><li><article class="card" data-cat="algoritma">
+<svg viewBox="0 0 160 80" role="img" aria-label="Ödev 1: Render kuyruğu akış şeması için simge"><rect x="60" y="8" width="40" height="14" rx="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M80 22v10M80 32l-24 16h48z" fill="none" stroke="currentColor" stroke-width="2"/><rect x="56" y="62" width="48" height="12" fill="none" stroke="var(--key)" stroke-width="2"/></svg>
+<h3>Ödev 1: Render kuyruğu akış şeması</h3><p>Bir render kuyruğunun algoritması ve akış şeması, YZ çözümüyle karşılaştırmalı.</p>
+<p class="learned"><strong>Ne öğrendim:</strong> Bir süreci adımlara ve karar noktalarına bölmeyi öğrendim.</p>
+<a href="https://github.com/KULLANICI_ADI/DEPO_ADI">GitHub'da aç</a>
+</article></li><li><article class="card" data-cat="python">
+<svg viewBox="0 0 160 80" role="img" aria-label="Ara Değerlendirme 1: Kare hesaplayıcı için simge"><text x="14" y="50" font-size="30" font-family="monospace" fill="currentColor">24 fps</text><rect x="14" y="60" width="132" height="6" fill="var(--key)"/></svg>
+<h3>Ara Değerlendirme 1: Kare hesaplayıcı</h3><p>Python ile sahne süresinden ve kare hızından toplam kare sayısını hesaplayan uygulama.</p>
+<p class="learned"><strong>Ne öğrendim:</strong> Girdi alıp hesaplama yapan, test edilebilir küçük bir program yazmayı öğrendim.</p>
+<a href="https://github.com/KULLANICI_ADI/DEPO_ADI">GitHub'da aç</a>
+</article></li><li><article class="card" data-cat="yazi">
+<svg viewBox="0 0 160 80" role="img" aria-label="Ödev 2: Kodlama ve YZ mesleğimde için simge"><rect x="30" y="14" width="100" height="6" fill="currentColor"/><rect x="30" y="30" width="100" height="6" fill="currentColor"/><rect x="30" y="46" width="70" height="6" fill="currentColor"/><rect x="30" y="62" width="40" height="6" fill="var(--key)"/></svg>
+<h3>Ödev 2: Kodlama ve YZ mesleğimde</h3><p>Kodlama ve yapay zekânın animasyon mesleğimdeki yerini anlatan yazı.</p>
+<p class="learned"><strong>Ne öğrendim:</strong> YZ çıktısını eleştirel okumanın ve kendi sözlerimle yazmanın önemini öğrendim.</p>
+<a href="https://github.com/KULLANICI_ADI/DEPO_ADI">GitHub'da aç</a>
+</article></li><li><article class="card" data-cat="web">
+<svg viewBox="0 0 160 80" role="img" aria-label="Ödev 5: Erişilebilirlik sayfası için simge"><rect x="20" y="10" width="120" height="60" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M34 40l10 10 20-22" fill="none" stroke="var(--key)" stroke-width="4"/><rect x="76" y="26" width="48" height="6" fill="currentColor"/><rect x="76" y="42" width="36" height="6" fill="currentColor"/></svg>
+<h3>Ödev 5: Erişilebilirlik sayfası</h3><p>Erişilebilirlik kontrol tablosu olan HTML/CSS sayfası.</p>
+<p class="learned"><strong>Ne öğrendim:</strong> Alt metin, label ve kontrast gibi erişilebilirlik kurallarını uygulamayı öğrendim.</p>
+<a href="https://github.com/KULLANICI_ADI/DEPO_ADI">GitHub'da aç</a>
+</article></li></ul>
+</div></main>
+<footer><div class="wrap">© 2026 Ad Soyad. Bu sitede izleyici, çerez veya üçüncü taraf betik yoktur; yalnızca karanlık mod tercihiniz tarayıcınızda saklanır.</div></footer>
+</body>
+</html>
